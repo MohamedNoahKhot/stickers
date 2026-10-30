@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticker Craft | Premium Die-Cut Stickers</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Sticker<span>Deck</span></div>
+      <a href="#catalog" class="nav-cta">Browse Stickers</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">College Stall Exclusive • Limited Run</span>
+      <h1>Waterproof, Residue-Free Die-Cut Stickers</h1>
+      <p>Premium laminated vinyl stickers built for laptops, phone covers, and water bottles. Zero sticky glue left behind.</p>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn primary-btn">Explore Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="catalog-section" id="catalog">
+    <div class="section-header">
+      <h2>Featured Collection</h2>
+      <p>Tap a category to filter designs</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pop-culture">Pop Culture</button>
+      <button class="filter-btn" data-filter="gaming">Gaming</button>
+      <button class="filter-btn" data-filter="anime">Anime</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+
+      <!-- Product Card 1 -->
+      <article class="card" data-category="pop-culture">
+        <div class="card-img-box">
+          <img src="images/baymax.png" alt="Big Hero 6 Fist Bump Sticker" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <span class="category-tag">Pop Culture</span>
+          <h3>Ba-La-La Fist Bump (3")</h3>
+          <p class="specs">Laminated Matte Vinyl • 3.0" x 3.0"</p>
+          <div class="card-footer">
+            <div class="price">₹49 <span class="mrp">₹79</span></div>
+            <button class="btn buy-btn" onclick="orderOnWhatsApp('Ba-La-La Fist Bump (3 inch)', '₹49')">
+              Order via WhatsApp
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Card 2 (Template placeholder) -->
+      <article class="card" data-category="gaming">
+        <div class="card-img-box">
+          <img src="images/sticker2.png" alt="Gaming Sticker" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <span class="category-tag">Gaming</span>
+          <h3>Pixel Heart Retro (2.5")</h3>
+          <p class="specs">Water-Resistant Gloss • 2.5" x 2.5"</p>
+          <div class="card-footer">
+            <div class="price">₹39 <span class="mrp">₹60</span></div>
+            <button class="btn buy-btn" onclick="orderOnWhatsApp('Pixel Heart Retro (2.5 inch)', '₹39')">
+              Order via WhatsApp
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Card 3 (Template placeholder) -->
+      <article class="card" data-category="anime">
+        <div class="card-img-box">
+          <img src="images/sticker3.png" alt="Anime Sticker" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <span class="category-tag">Anime</span>
+          <h3>Chibi Slayer (3")</h3>
+          <p class="specs">Anti-Scratch Laminate • 3.0" x 3.0"</p>
+          <div class="card-footer">
+            <div class="price">₹49 <span class="mrp">₹79</span></div>
+            <button class="btn buy-btn" onclick="orderOnWhatsApp('Chibi Slayer (3 inch)', '₹49')">
+              Order via WhatsApp
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 StickerCraft. Payments accepted via Google Pay, PhonePe, Paytm (UPI).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
